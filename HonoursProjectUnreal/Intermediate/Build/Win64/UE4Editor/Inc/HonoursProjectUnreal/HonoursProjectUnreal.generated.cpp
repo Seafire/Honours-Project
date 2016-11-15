@@ -15,24 +15,113 @@ void EmptyLinkFunctionForGeneratedCode1HonoursProjectUnreal() {}
 	IMPLEMENT_CLASS(AHonoursProjectUnrealGameMode, 2594969491);
 	void ARTSPlayerCameraPawn::StaticRegisterNativesARTSPlayerCameraPawn()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "FastMoveInput",(Native)&ARTSPlayerCameraPawn::execFastMoveInput);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "GetIsolatedCameraYaw",(Native)&ARTSPlayerCameraPawn::execGetIsolatedCameraYaw);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "MoveCameraForward",(Native)&ARTSPlayerCameraPawn::execMoveCameraForward);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "MoveCameraForwardInput",(Native)&ARTSPlayerCameraPawn::execMoveCameraForwardInput);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "MoveCameraRight",(Native)&ARTSPlayerCameraPawn::execMoveCameraRight);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "MoveCameraRightInput",(Native)&ARTSPlayerCameraPawn::execMoveCameraRightInput);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "MoveCameraUp",(Native)&ARTSPlayerCameraPawn::execMoveCameraUp);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "MoveCameraUpInput",(Native)&ARTSPlayerCameraPawn::execMoveCameraUpInput);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "RepositionCamera",(Native)&ARTSPlayerCameraPawn::execRepositionCamera);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "RotateDownByWheel",(Native)&ARTSPlayerCameraPawn::execRotateDownByWheel);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "RotateInput",(Native)&ARTSPlayerCameraPawn::execRotateInput);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "RotateLeftByWheel",(Native)&ARTSPlayerCameraPawn::execRotateLeftByWheel);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "RotateRightByWheel",(Native)&ARTSPlayerCameraPawn::execRotateRightByWheel);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "RotateUpByWheel",(Native)&ARTSPlayerCameraPawn::execRotateUpByWheel);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "TurnCameraRight",(Native)&ARTSPlayerCameraPawn::execTurnCameraRight);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "TurnCameraUp",(Native)&ARTSPlayerCameraPawn::execTurnCameraUp);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "ZoomCameraIn",(Native)&ARTSPlayerCameraPawn::execZoomCameraIn);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "ZoomCameraInInput",(Native)&ARTSPlayerCameraPawn::execZoomCameraInInput);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "ZoomInByWheel",(Native)&ARTSPlayerCameraPawn::execZoomInByWheel);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "ZoomOutByWheel",(Native)&ARTSPlayerCameraPawn::execZoomOutByWheel);
 	}
-	IMPLEMENT_CLASS(ARTSPlayerCameraPawn, 856472601);
+	IMPLEMENT_CLASS(ARTSPlayerCameraPawn, 2855591568);
 	void ARTSPlayerController::StaticRegisterNativesARTSPlayerController()
 	{
 	}
 	IMPLEMENT_CLASS(ARTSPlayerController, 2481376308);
+	void ARTSPlayerSpectatorCameraPawn::StaticRegisterNativesARTSPlayerSpectatorCameraPawn()
+	{
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "FastMoveInput",(Native)&ARTSPlayerSpectatorCameraPawn::execFastMoveInput);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "GetIsolatedCameraYaw",(Native)&ARTSPlayerSpectatorCameraPawn::execGetIsolatedCameraYaw);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "MoveCameraForward",(Native)&ARTSPlayerSpectatorCameraPawn::execMoveCameraForward);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "MoveCameraForwardInput",(Native)&ARTSPlayerSpectatorCameraPawn::execMoveCameraForwardInput);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "MoveCameraRight",(Native)&ARTSPlayerSpectatorCameraPawn::execMoveCameraRight);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "MoveCameraRightInput",(Native)&ARTSPlayerSpectatorCameraPawn::execMoveCameraRightInput);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "MoveCameraUp",(Native)&ARTSPlayerSpectatorCameraPawn::execMoveCameraUp);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "MoveCameraUpInput",(Native)&ARTSPlayerSpectatorCameraPawn::execMoveCameraUpInput);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "RepositionCamera",(Native)&ARTSPlayerSpectatorCameraPawn::execRepositionCamera);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "RotateDownByWheel",(Native)&ARTSPlayerSpectatorCameraPawn::execRotateDownByWheel);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "RotateInput",(Native)&ARTSPlayerSpectatorCameraPawn::execRotateInput);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "RotateLeftByWheel",(Native)&ARTSPlayerSpectatorCameraPawn::execRotateLeftByWheel);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "RotateRightByWheel",(Native)&ARTSPlayerSpectatorCameraPawn::execRotateRightByWheel);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "RotateUpByWheel",(Native)&ARTSPlayerSpectatorCameraPawn::execRotateUpByWheel);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "TurnCameraRight",(Native)&ARTSPlayerSpectatorCameraPawn::execTurnCameraRight);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "TurnCameraUp",(Native)&ARTSPlayerSpectatorCameraPawn::execTurnCameraUp);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "ZoomCameraIn",(Native)&ARTSPlayerSpectatorCameraPawn::execZoomCameraIn);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "ZoomCameraInInput",(Native)&ARTSPlayerSpectatorCameraPawn::execZoomCameraInInput);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "ZoomInByWheel",(Native)&ARTSPlayerSpectatorCameraPawn::execZoomInByWheel);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "ZoomOutByWheel",(Native)&ARTSPlayerSpectatorCameraPawn::execZoomOutByWheel);
+	}
+	IMPLEMENT_CLASS(ARTSPlayerSpectatorCameraPawn, 2428581471);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
+	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 	ENGINE_API class UClass* Z_Construct_UClass_APawn();
+	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_APlayerController();
+	ENGINE_API class UClass* Z_Construct_UClass_ASpectatorPawn();
 
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_AHonoursProjectUnrealGameMode_NoRegister();
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_AHonoursProjectUnrealGameMode();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_FastMoveInput();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_GetIsolatedCameraYaw();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraForward();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraForwardInput();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraRight();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraRightInput();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraUp();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraUpInput();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_RepositionCamera();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateDownByWheel();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateInput();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateLeftByWheel();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateRightByWheel();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateUpByWheel();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_TurnCameraRight();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_TurnCameraUp();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomCameraIn();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomCameraInInput();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomInByWheel();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomOutByWheel();
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_ARTSPlayerCameraPawn_NoRegister();
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_ARTSPlayerCameraPawn();
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_ARTSPlayerController_NoRegister();
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_ARTSPlayerController();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_FastMoveInput();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_GetIsolatedCameraYaw();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraForward();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraForwardInput();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraRight();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraRightInput();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraUp();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraUpInput();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RepositionCamera();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateDownByWheel();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateInput();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateLeftByWheel();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateRightByWheel();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateUpByWheel();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_TurnCameraRight();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_TurnCameraUp();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_ZoomCameraIn();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_ZoomCameraInInput();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_ZoomInByWheel();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_ZoomOutByWheel();
+	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn_NoRegister();
+	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
 	HONOURSPROJECTUNREAL_API class UPackage* Z_Construct_UPackage__Script_HonoursProjectUnreal();
 	UClass* Z_Construct_UClass_AHonoursProjectUnrealGameMode_NoRegister()
 	{
@@ -69,6 +158,410 @@ void EmptyLinkFunctionForGeneratedCode1HonoursProjectUnreal() {}
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AHonoursProjectUnrealGameMode(Z_Construct_UClass_AHonoursProjectUnrealGameMode, &AHonoursProjectUnrealGameMode::StaticClass, TEXT("AHonoursProjectUnrealGameMode"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AHonoursProjectUnrealGameMode);
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_FastMoveInput()
+	{
+		struct RTSPlayerCameraPawn_eventFastMoveInput_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("FastMoveInput"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535, sizeof(RTSPlayerCameraPawn_eventFastMoveInput_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerCameraPawn_eventFastMoveInput_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Left or Right Shift is pressed\n@param direcation - (1.0 for Right, -1.0 for Left)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_GetIsolatedCameraYaw()
+	{
+		struct RTSPlayerCameraPawn_eventGetIsolatedCameraYaw_Parms
+		{
+			FRotator ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetIsolatedCameraYaw"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00840401, 65535, sizeof(RTSPlayerCameraPawn_eventGetIsolatedCameraYaw_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, RTSPlayerCameraPawn_eventGetIsolatedCameraYaw_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FRotator());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Gets the roatation of the camera with only the yaw value\n@return - returns a rotator that is (0, yaw, 0) of the Camera"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraForward()
+	{
+		struct RTSPlayerCameraPawn_eventMoveCameraForward_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MoveCameraForward"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00040401, 65535, sizeof(RTSPlayerCameraPawn_eventMoveCameraForward_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerCameraPawn_eventMoveCameraForward_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Moves the camera forward\n@param direcation - (+ forward, - backward)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraForwardInput()
+	{
+		struct RTSPlayerCameraPawn_eventMoveCameraForwardInput_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MoveCameraForwardInput"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535, sizeof(RTSPlayerCameraPawn_eventMoveCameraForwardInput_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerCameraPawn_eventMoveCameraForwardInput_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Input recieved to move the camera forward\n@param direcation - (1.0 for forward, -1.0 for backward)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraRight()
+	{
+		struct RTSPlayerCameraPawn_eventMoveCameraRight_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MoveCameraRight"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00040401, 65535, sizeof(RTSPlayerCameraPawn_eventMoveCameraRight_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerCameraPawn_eventMoveCameraRight_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Moves the camera right\n@param direcation - (+ right, - left)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraRightInput()
+	{
+		struct RTSPlayerCameraPawn_eventMoveCameraRightInput_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MoveCameraRightInput"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535, sizeof(RTSPlayerCameraPawn_eventMoveCameraRightInput_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerCameraPawn_eventMoveCameraRightInput_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Input recieved to move the camera right\n@param direcation - (1.0 for right, -1.0 for left)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraUp()
+	{
+		struct RTSPlayerCameraPawn_eventMoveCameraUp_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MoveCameraUp"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00040401, 65535, sizeof(RTSPlayerCameraPawn_eventMoveCameraUp_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerCameraPawn_eventMoveCameraUp_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Moves the camera up/down\n@param direcation - (+ up, - down)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraUpInput()
+	{
+		struct RTSPlayerCameraPawn_eventMoveCameraUpInput_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MoveCameraUpInput"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535, sizeof(RTSPlayerCameraPawn_eventMoveCameraUpInput_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerCameraPawn_eventMoveCameraUpInput_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Input recieved to move the camera right\n@param direcation - (1.0 for right, -1.0 for left)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_RepositionCamera()
+	{
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("RepositionCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateDownByWheel()
+	{
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("RotateDownByWheel"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Rotate The Camera Down"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateInput()
+	{
+		struct RTSPlayerCameraPawn_eventRotateInput_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("RotateInput"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535, sizeof(RTSPlayerCameraPawn_eventRotateInput_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerCameraPawn_eventRotateInput_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Left or Right Ctrl is pressed\n@param direcation - (1.0 for Right, -1.0 for Left)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateLeftByWheel()
+	{
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("RotateLeftByWheel"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Rotate The Camera Left"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateRightByWheel()
+	{
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("RotateRightByWheel"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Rotate The Camera Right"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateUpByWheel()
+	{
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("RotateUpByWheel"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Rotate The Camera Up"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_TurnCameraRight()
+	{
+		struct RTSPlayerCameraPawn_eventTurnCameraRight_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TurnCameraRight"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00040401, 65535, sizeof(RTSPlayerCameraPawn_eventTurnCameraRight_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerCameraPawn_eventTurnCameraRight_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Turns the camera right/left\n@param direcation - (+ right, - left)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_TurnCameraUp()
+	{
+		struct RTSPlayerCameraPawn_eventTurnCameraUp_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TurnCameraUp"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00040401, 65535, sizeof(RTSPlayerCameraPawn_eventTurnCameraUp_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerCameraPawn_eventTurnCameraUp_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Turns the camera up/down\n@param direcation - (+ up, - down)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomCameraIn()
+	{
+		struct RTSPlayerCameraPawn_eventZoomCameraIn_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ZoomCameraIn"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00040401, 65535, sizeof(RTSPlayerCameraPawn_eventZoomCameraIn_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerCameraPawn_eventZoomCameraIn_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Zooms the camera in/out\n@param direcation - (+ in, - out)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomCameraInInput()
+	{
+		struct RTSPlayerCameraPawn_eventZoomCameraInInput_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ZoomCameraInInput"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535, sizeof(RTSPlayerCameraPawn_eventZoomCameraInInput_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerCameraPawn_eventZoomCameraInInput_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Input recieved to move the camera right\n@param direcation - (1.0 for right, -1.0 for left)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomInByWheel()
+	{
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ZoomInByWheel"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Zooms In The Camera"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomOutByWheel()
+	{
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ZoomOutByWheel"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Zooms Out The Camera"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ARTSPlayerCameraPawn_NoRegister()
 	{
 		return ARTSPlayerCameraPawn::StaticClass();
@@ -86,14 +579,109 @@ void EmptyLinkFunctionForGeneratedCode1HonoursProjectUnreal() {}
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_FastMoveInput());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_GetIsolatedCameraYaw());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraForward());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraForwardInput());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraRight());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraRightInput());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraUp());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraUpInput());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_RepositionCamera());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateDownByWheel());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateInput());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateLeftByWheel());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateRightByWheel());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateUpByWheel());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_TurnCameraRight());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_TurnCameraUp());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomCameraIn());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomCameraInInput());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomInByWheel());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomOutByWheel());
 
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bCanMoveCamera, ARTSPlayerCameraPawn, bool);
+				UProperty* NewProp_bCanMoveCamera = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bCanMoveCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bCanMoveCamera, ARTSPlayerCameraPawn), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bCanMoveCamera, ARTSPlayerCameraPawn), sizeof(bool), true);
+				UProperty* NewProp_CameraScrollBoundary = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraScrollBoundary"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraScrollBoundary, ARTSPlayerCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraMovementSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraMovementSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraMovementSpeed, ARTSPlayerCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraRotationSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraRotationSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraRotationSpeed, ARTSPlayerCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraZoomSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraZoomSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraZoomSpeed, ARTSPlayerCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraRadiusMin = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraRadiusMin"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraRadiusMin, ARTSPlayerCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraRadiusMax = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraRadiusMax"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraRadiusMax, ARTSPlayerCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraRadius = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraRadius"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraRadius, ARTSPlayerCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraHeightAngleMin = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraHeightAngleMin"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraHeightAngleMin, ARTSPlayerCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraHeightAngleMax = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraHeightAngleMax"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraHeightAngleMax, ARTSPlayerCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraHeightAngle = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraHeightAngle"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraHeightAngle, ARTSPlayerCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraZAngle = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraZAngle"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraZAngle, ARTSPlayerCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CameraComponent, ARTSPlayerCameraPawn), 0x00100000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_FastMoveInput(), "FastMoveInput"); // 2073512935
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_GetIsolatedCameraYaw(), "GetIsolatedCameraYaw"); // 418170897
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraForward(), "MoveCameraForward"); // 238259717
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraForwardInput(), "MoveCameraForwardInput"); // 878190351
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraRight(), "MoveCameraRight"); // 3045471731
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraRightInput(), "MoveCameraRightInput"); // 2036192831
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraUp(), "MoveCameraUp"); // 3142658032
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraUpInput(), "MoveCameraUpInput"); // 3768985291
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_RepositionCamera(), "RepositionCamera"); // 3052064022
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateDownByWheel(), "RotateDownByWheel"); // 3528160227
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateInput(), "RotateInput"); // 1281768949
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateLeftByWheel(), "RotateLeftByWheel"); // 3245431701
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateRightByWheel(), "RotateRightByWheel"); // 2666612230
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_RotateUpByWheel(), "RotateUpByWheel"); // 2413477297
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_TurnCameraRight(), "TurnCameraRight"); // 1829546965
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_TurnCameraUp(), "TurnCameraUp"); // 289102100
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomCameraIn(), "ZoomCameraIn"); // 2013833644
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomCameraInInput(), "ZoomCameraInInput"); // 1719532235
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomInByWheel(), "ZoomInByWheel"); // 1633222212
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomOutByWheel(), "ZoomOutByWheel"); // 15299730
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("RTSPlayerCameraPawn.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
-				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_bCanMoveCamera, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_bCanMoveCamera, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+				MetaData->SetValue(NewProp_bCanMoveCamera, TEXT("ToolTip"), TEXT("Should the camera move?"));
+				MetaData->SetValue(NewProp_CameraScrollBoundary, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraScrollBoundary, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraScrollBoundary, TEXT("ToolTip"), TEXT("Camera Scroll Boundary"));
+				MetaData->SetValue(NewProp_CameraMovementSpeed, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraMovementSpeed, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraMovementSpeed, TEXT("ToolTip"), TEXT("Camera Movement Speed"));
+				MetaData->SetValue(NewProp_CameraRotationSpeed, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraRotationSpeed, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraRotationSpeed, TEXT("ToolTip"), TEXT("Camera Rotation Speed"));
+				MetaData->SetValue(NewProp_CameraZoomSpeed, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraZoomSpeed, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraZoomSpeed, TEXT("ToolTip"), TEXT("Camera Zoom Speed"));
+				MetaData->SetValue(NewProp_CameraRadiusMin, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraRadiusMin, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraRadiusMin, TEXT("ToolTip"), TEXT("Camera Radius Min"));
+				MetaData->SetValue(NewProp_CameraRadiusMax, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraRadiusMax, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraRadiusMax, TEXT("ToolTip"), TEXT("Camera Radius Max"));
+				MetaData->SetValue(NewProp_CameraRadius, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraRadius, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraRadius, TEXT("ToolTip"), TEXT("Camera Radius From Pawn Position"));
+				MetaData->SetValue(NewProp_CameraHeightAngleMin, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraHeightAngleMin, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraHeightAngleMin, TEXT("ToolTip"), TEXT("Camera Pitch Angle Min"));
+				MetaData->SetValue(NewProp_CameraHeightAngleMax, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraHeightAngleMax, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraHeightAngleMax, TEXT("ToolTip"), TEXT("Camera Pitch Angle Max"));
+				MetaData->SetValue(NewProp_CameraHeightAngle, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraHeightAngle, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraHeightAngle, TEXT("ToolTip"), TEXT("Camera Height Angle"));
+				MetaData->SetValue(NewProp_CameraZAngle, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraZAngle, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraZAngle, TEXT("ToolTip"), TEXT("Camera Rotation"));
+				MetaData->SetValue(NewProp_CameraComponent, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_CameraComponent, TEXT("ModuleRelativePath"), TEXT("RTSPlayerCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraComponent, TEXT("ToolTip"), TEXT("Camera Component"));
 #endif
 			}
 		}
@@ -136,6 +724,538 @@ void EmptyLinkFunctionForGeneratedCode1HonoursProjectUnreal() {}
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ARTSPlayerController(Z_Construct_UClass_ARTSPlayerController, &ARTSPlayerController::StaticClass, TEXT("ARTSPlayerController"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ARTSPlayerController);
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_FastMoveInput()
+	{
+		struct RTSPlayerSpectatorCameraPawn_eventFastMoveInput_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("FastMoveInput"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535, sizeof(RTSPlayerSpectatorCameraPawn_eventFastMoveInput_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerSpectatorCameraPawn_eventFastMoveInput_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Left or Right Shift is pressed\n@param direcation - (1.0 for Right, -1.0 for Left)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_GetIsolatedCameraYaw()
+	{
+		struct RTSPlayerSpectatorCameraPawn_eventGetIsolatedCameraYaw_Parms
+		{
+			FRotator ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetIsolatedCameraYaw"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00840401, 65535, sizeof(RTSPlayerSpectatorCameraPawn_eventGetIsolatedCameraYaw_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, RTSPlayerSpectatorCameraPawn_eventGetIsolatedCameraYaw_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FRotator());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Gets the roatation of the camera with only the yaw value\n@return - returns a rotator that is (0, yaw, 0) of the Camera"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraForward()
+	{
+		struct RTSPlayerSpectatorCameraPawn_eventMoveCameraForward_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MoveCameraForward"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00040401, 65535, sizeof(RTSPlayerSpectatorCameraPawn_eventMoveCameraForward_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerSpectatorCameraPawn_eventMoveCameraForward_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Moves the camera forward\n@param direcation - (+ forward, - backward)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraForwardInput()
+	{
+		struct RTSPlayerSpectatorCameraPawn_eventMoveCameraForwardInput_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MoveCameraForwardInput"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535, sizeof(RTSPlayerSpectatorCameraPawn_eventMoveCameraForwardInput_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerSpectatorCameraPawn_eventMoveCameraForwardInput_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Input recieved to move the camera forward\n@param direcation - (1.0 for forward, -1.0 for backward)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraRight()
+	{
+		struct RTSPlayerSpectatorCameraPawn_eventMoveCameraRight_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MoveCameraRight"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00040401, 65535, sizeof(RTSPlayerSpectatorCameraPawn_eventMoveCameraRight_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerSpectatorCameraPawn_eventMoveCameraRight_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Moves the camera right\n@param direcation - (+ right, - left)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraRightInput()
+	{
+		struct RTSPlayerSpectatorCameraPawn_eventMoveCameraRightInput_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MoveCameraRightInput"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535, sizeof(RTSPlayerSpectatorCameraPawn_eventMoveCameraRightInput_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerSpectatorCameraPawn_eventMoveCameraRightInput_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Input recieved to move the camera right\n@param direcation - (1.0 for right, -1.0 for left)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraUp()
+	{
+		struct RTSPlayerSpectatorCameraPawn_eventMoveCameraUp_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MoveCameraUp"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00040401, 65535, sizeof(RTSPlayerSpectatorCameraPawn_eventMoveCameraUp_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerSpectatorCameraPawn_eventMoveCameraUp_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Moves the camera up/down\n@param direcation - (+ up, - down)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraUpInput()
+	{
+		struct RTSPlayerSpectatorCameraPawn_eventMoveCameraUpInput_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MoveCameraUpInput"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535, sizeof(RTSPlayerSpectatorCameraPawn_eventMoveCameraUpInput_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerSpectatorCameraPawn_eventMoveCameraUpInput_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Input recieved to move the camera right\n@param direcation - (1.0 for right, -1.0 for left)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RepositionCamera()
+	{
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("RepositionCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateDownByWheel()
+	{
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("RotateDownByWheel"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Rotate The Camera Down"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateInput()
+	{
+		struct RTSPlayerSpectatorCameraPawn_eventRotateInput_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("RotateInput"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535, sizeof(RTSPlayerSpectatorCameraPawn_eventRotateInput_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerSpectatorCameraPawn_eventRotateInput_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Left or Right Ctrl is pressed\n@param direcation - (1.0 for Right, -1.0 for Left)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateLeftByWheel()
+	{
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("RotateLeftByWheel"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Rotate The Camera Left"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateRightByWheel()
+	{
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("RotateRightByWheel"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Rotate The Camera Right"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateUpByWheel()
+	{
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("RotateUpByWheel"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Rotate The Camera Up"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_TurnCameraRight()
+	{
+		struct RTSPlayerSpectatorCameraPawn_eventTurnCameraRight_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TurnCameraRight"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00040401, 65535, sizeof(RTSPlayerSpectatorCameraPawn_eventTurnCameraRight_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerSpectatorCameraPawn_eventTurnCameraRight_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Turns the camera right/left\n@param direcation - (+ right, - left)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_TurnCameraUp()
+	{
+		struct RTSPlayerSpectatorCameraPawn_eventTurnCameraUp_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TurnCameraUp"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00040401, 65535, sizeof(RTSPlayerSpectatorCameraPawn_eventTurnCameraUp_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerSpectatorCameraPawn_eventTurnCameraUp_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Turns the camera up/down\n@param direcation - (+ up, - down)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_ZoomCameraIn()
+	{
+		struct RTSPlayerSpectatorCameraPawn_eventZoomCameraIn_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ZoomCameraIn"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00040401, 65535, sizeof(RTSPlayerSpectatorCameraPawn_eventZoomCameraIn_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerSpectatorCameraPawn_eventZoomCameraIn_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Zooms the camera in/out\n@param direcation - (+ in, - out)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_ZoomCameraInInput()
+	{
+		struct RTSPlayerSpectatorCameraPawn_eventZoomCameraInInput_Parms
+		{
+			float Direction;
+		};
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ZoomCameraInInput"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535, sizeof(RTSPlayerSpectatorCameraPawn_eventZoomCameraInInput_Parms));
+			UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Direction, RTSPlayerSpectatorCameraPawn_eventZoomCameraInInput_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Input recieved to move the camera right\n@param direcation - (1.0 for right, -1.0 for left)"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_ZoomInByWheel()
+	{
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ZoomInByWheel"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Zooms In The Camera"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_ZoomOutByWheel()
+	{
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ZoomOutByWheel"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Zooms Out The Camera"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn_NoRegister()
+	{
+		return ARTSPlayerSpectatorCameraPawn::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_ASpectatorPawn();
+			Z_Construct_UPackage__Script_HonoursProjectUnreal();
+			OuterClass = ARTSPlayerSpectatorCameraPawn::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900280;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_FastMoveInput());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_GetIsolatedCameraYaw());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraForward());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraForwardInput());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraRight());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraRightInput());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraUp());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraUpInput());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RepositionCamera());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateDownByWheel());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateInput());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateLeftByWheel());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateRightByWheel());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateUpByWheel());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_TurnCameraRight());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_TurnCameraUp());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_ZoomCameraIn());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_ZoomCameraInInput());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_ZoomInByWheel());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_ZoomOutByWheel());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bCanMoveCamera, ARTSPlayerSpectatorCameraPawn, bool);
+				UProperty* NewProp_bCanMoveCamera = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bCanMoveCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bCanMoveCamera, ARTSPlayerSpectatorCameraPawn), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bCanMoveCamera, ARTSPlayerSpectatorCameraPawn), sizeof(bool), true);
+				UProperty* NewProp_CameraScrollBoundary = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraScrollBoundary"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraScrollBoundary, ARTSPlayerSpectatorCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraMovementSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraMovementSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraMovementSpeed, ARTSPlayerSpectatorCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraRotationSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraRotationSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraRotationSpeed, ARTSPlayerSpectatorCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraZoomSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraZoomSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraZoomSpeed, ARTSPlayerSpectatorCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraRadiusMin = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraRadiusMin"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraRadiusMin, ARTSPlayerSpectatorCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraRadiusMax = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraRadiusMax"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraRadiusMax, ARTSPlayerSpectatorCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraRadius = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraRadius"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraRadius, ARTSPlayerSpectatorCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraHeightAngleMin = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraHeightAngleMin"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraHeightAngleMin, ARTSPlayerSpectatorCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraHeightAngleMax = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraHeightAngleMax"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraHeightAngleMax, ARTSPlayerSpectatorCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraHeightAngle = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraHeightAngle"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraHeightAngle, ARTSPlayerSpectatorCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraZAngle = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraZAngle"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CameraZAngle, ARTSPlayerSpectatorCameraPawn), 0x0010000000000005);
+				UProperty* NewProp_CameraComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CameraComponent, ARTSPlayerSpectatorCameraPawn), 0x00100000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_FastMoveInput(), "FastMoveInput"); // 389986702
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_GetIsolatedCameraYaw(), "GetIsolatedCameraYaw"); // 1044969572
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraForward(), "MoveCameraForward"); // 397881680
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraForwardInput(), "MoveCameraForwardInput"); // 3679101269
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraRight(), "MoveCameraRight"); // 3073960449
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraRightInput(), "MoveCameraRightInput"); // 3837892204
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraUp(), "MoveCameraUp"); // 1253020275
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_MoveCameraUpInput(), "MoveCameraUpInput"); // 2944526867
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RepositionCamera(), "RepositionCamera"); // 2534404161
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateDownByWheel(), "RotateDownByWheel"); // 2737886568
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateInput(), "RotateInput"); // 1560298269
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateLeftByWheel(), "RotateLeftByWheel"); // 2826761858
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateRightByWheel(), "RotateRightByWheel"); // 3429279362
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_RotateUpByWheel(), "RotateUpByWheel"); // 2030017533
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_TurnCameraRight(), "TurnCameraRight"); // 3319481167
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_TurnCameraUp(), "TurnCameraUp"); // 348906563
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_ZoomCameraIn(), "ZoomCameraIn"); // 2633016097
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_ZoomCameraInInput(), "ZoomCameraInInput"); // 1527937999
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_ZoomInByWheel(), "ZoomInByWheel"); // 2509585327
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_ZoomOutByWheel(), "ZoomOutByWheel"); // 4091965147
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+				MetaData->SetValue(NewProp_bCanMoveCamera, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_bCanMoveCamera, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+				MetaData->SetValue(NewProp_bCanMoveCamera, TEXT("ToolTip"), TEXT("Should the camera move?"));
+				MetaData->SetValue(NewProp_CameraScrollBoundary, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraScrollBoundary, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraScrollBoundary, TEXT("ToolTip"), TEXT("Camera Scroll Boundary"));
+				MetaData->SetValue(NewProp_CameraMovementSpeed, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraMovementSpeed, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraMovementSpeed, TEXT("ToolTip"), TEXT("Camera Movement Speed"));
+				MetaData->SetValue(NewProp_CameraRotationSpeed, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraRotationSpeed, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraRotationSpeed, TEXT("ToolTip"), TEXT("Camera Rotation Speed"));
+				MetaData->SetValue(NewProp_CameraZoomSpeed, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraZoomSpeed, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraZoomSpeed, TEXT("ToolTip"), TEXT("Camera Zoom Speed"));
+				MetaData->SetValue(NewProp_CameraRadiusMin, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraRadiusMin, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraRadiusMin, TEXT("ToolTip"), TEXT("Camera Radius Min"));
+				MetaData->SetValue(NewProp_CameraRadiusMax, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraRadiusMax, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraRadiusMax, TEXT("ToolTip"), TEXT("Camera Radius Max"));
+				MetaData->SetValue(NewProp_CameraRadius, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraRadius, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraRadius, TEXT("ToolTip"), TEXT("Camera Radius From Pawn Position"));
+				MetaData->SetValue(NewProp_CameraHeightAngleMin, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraHeightAngleMin, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraHeightAngleMin, TEXT("ToolTip"), TEXT("Camera Pitch Angle Min"));
+				MetaData->SetValue(NewProp_CameraHeightAngleMax, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraHeightAngleMax, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraHeightAngleMax, TEXT("ToolTip"), TEXT("Camera Pitch Angle Max"));
+				MetaData->SetValue(NewProp_CameraHeightAngle, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraHeightAngle, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraHeightAngle, TEXT("ToolTip"), TEXT("Camera Height Angle"));
+				MetaData->SetValue(NewProp_CameraZAngle, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraZAngle, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraZAngle, TEXT("ToolTip"), TEXT("Camera Rotation"));
+				MetaData->SetValue(NewProp_CameraComponent, TEXT("Category"), TEXT("Camera"));
+				MetaData->SetValue(NewProp_CameraComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_CameraComponent, TEXT("ModuleRelativePath"), TEXT("RTSPlayerSpectatorCameraPawn.h"));
+				MetaData->SetValue(NewProp_CameraComponent, TEXT("ToolTip"), TEXT("Camera Component"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ARTSPlayerSpectatorCameraPawn(Z_Construct_UClass_ARTSPlayerSpectatorCameraPawn, &ARTSPlayerSpectatorCameraPawn::StaticClass, TEXT("ARTSPlayerSpectatorCameraPawn"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ARTSPlayerSpectatorCameraPawn);
 	UPackage* Z_Construct_UPackage__Script_HonoursProjectUnreal()
 	{
 		static UPackage* ReturnPackage = NULL;
@@ -144,8 +1264,8 @@ void EmptyLinkFunctionForGeneratedCode1HonoursProjectUnreal() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/HonoursProjectUnreal")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x208FE2B3;
-			Guid.B = 0xFAC39AA8;
+			Guid.A = 0x77D5556A;
+			Guid.B = 0xC6415790;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

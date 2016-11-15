@@ -4,13 +4,13 @@
 #include "HonoursProjectUnrealGameMode.h"
 
 #include "RTSPlayerController.h"
-#include "RTSPlayerCameraPawn.h"
+#include "RTSPlayerSpectatorCameraPawn.h"
 
 AHonoursProjectUnrealGameMode::AHonoursProjectUnrealGameMode()
 {
 	// C++ classes
 	PlayerControllerClass = ARTSPlayerController::StaticClass();
-	DefaultPawnClass = ARTSPlayerCameraPawn::StaticClass();
+	DefaultPawnClass = ARTSPlayerSpectatorCameraPawn::StaticClass();
 }
 
 

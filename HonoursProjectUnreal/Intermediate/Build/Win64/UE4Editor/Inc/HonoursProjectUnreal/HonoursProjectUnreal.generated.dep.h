@@ -14,3 +14,6 @@
 #ifndef HONOURSPROJECTUNREAL_RTSPlayerController_generated_h
 	#include "RTSPlayerController.h"
 #endif
+#ifndef HONOURSPROJECTUNREAL_RTSPlayerSpectatorCameraPawn_generated_h
+	#include "RTSPlayerSpectatorCameraPawn.h"
+#endif

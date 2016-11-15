@@ -1,61 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
-    <None Include="..\..\HonoursProjectUnreal.uproject" />
-    <Filter Include="Source">
-      <UniqueIdentifier>{039304EC-68CC-464B-8D05-851E40FFF260}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\HonoursProjectUnreal.Target.cs">
-      <Filter>Source</Filter>
-    </None>
-    <None Include="..\..\Source\HonoursProjectUnrealEditor.Target.cs">
-      <Filter>Source</Filter>
-    </None>
-    <Filter Include="Config">
-      <UniqueIdentifier>{1CBEC906-0BF9-4C44-BB91-A4335552C85C}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Config\DefaultEditor.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEngine.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultGame.ini">
-      <Filter>Config</Filter>
-    </None>
-    <Filter Include="Source\HonoursProjectUnreal">
-      <UniqueIdentifier>{B4AE4A8B-F03C-4E10-8558-F36FF97C7C79}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\HonoursProjectUnreal\HonoursProjectUnreal.Build.cs">
-      <Filter>Source\HonoursProjectUnreal</Filter>
-    </None>
-    <ClCompile Include="..\..\Source\HonoursProjectUnreal\HonoursProjectUnreal.cpp">
-      <Filter>Source\HonoursProjectUnreal</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\HonoursProjectUnreal\HonoursProjectUnreal.h">
-      <Filter>Source\HonoursProjectUnreal</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\HonoursProjectUnreal\HonoursProjectUnrealGameMode.cpp">
-      <Filter>Source\HonoursProjectUnreal</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\HonoursProjectUnreal\HonoursProjectUnrealGameMode.h">
-      <Filter>Source\HonoursProjectUnreal</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\HonoursProjectUnreal\RTSPlayerController.h">
-      <Filter>Source\HonoursProjectUnreal</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\HonoursProjectUnreal\RTSPlayerCameraPawn.h">
-      <Filter>Source\HonoursProjectUnreal</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Source\HonoursProjectUnreal\RTSPlayerController.cpp">
-      <Filter>Source\HonoursProjectUnreal</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\HonoursProjectUnreal\RTSPlayerCameraPawn.cpp">
-      <Filter>Source\HonoursProjectUnreal</Filter>
-    </ClCompile>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\HonoursProjectUnreal.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{DD0CF4D9-B945-475F-9072-51771150631A}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\HonoursProjectUnreal.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\HonoursProjectUnrealEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{0D80058E-B1A5-4788-B0F1-7609918D5ACC}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\HonoursProjectUnreal">
+			<UniqueIdentifier>{08224488-BB59-4EF3-B37D-838C0EEA64BC}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\HonoursProjectUnreal\HonoursProjectUnreal.Build.cs">
+			<Filter>Source\HonoursProjectUnreal</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\HonoursProjectUnreal\HonoursProjectUnreal.cpp">
+			<Filter>Source\HonoursProjectUnreal</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\HonoursProjectUnreal\HonoursProjectUnreal.h">
+			<Filter>Source\HonoursProjectUnreal</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\HonoursProjectUnreal\HonoursProjectUnrealGameMode.cpp">
+			<Filter>Source\HonoursProjectUnreal</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\HonoursProjectUnreal\HonoursProjectUnrealGameMode.h">
+			<Filter>Source\HonoursProjectUnreal</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\HonoursProjectUnreal\RTSPlayerCameraPawn.cpp">
+			<Filter>Source\HonoursProjectUnreal</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\HonoursProjectUnreal\RTSPlayerCameraPawn.h">
+			<Filter>Source\HonoursProjectUnreal</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\HonoursProjectUnreal\RTSPlayerController.cpp">
+			<Filter>Source\HonoursProjectUnreal</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\HonoursProjectUnreal\RTSPlayerController.h">
+			<Filter>Source\HonoursProjectUnreal</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\HonoursProjectUnreal\RTSPlayerSpectatorCameraPawn.cpp">
+			<Filter>Source\HonoursProjectUnreal</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\HonoursProjectUnreal\RTSPlayerSpectatorCameraPawn.h">
+			<Filter>Source\HonoursProjectUnreal</Filter>
+		</ClInclude >
+	</ItemGroup>
 </Project>
