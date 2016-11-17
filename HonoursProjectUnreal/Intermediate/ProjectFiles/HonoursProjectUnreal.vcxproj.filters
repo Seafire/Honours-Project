@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\HonoursProjectUnreal.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{DD0CF4D9-B945-475F-9072-51771150631A}</UniqueIdentifier>
+			<UniqueIdentifier>{4E777CD3-021F-45A2-88A6-5922CA627136}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\HonoursProjectUnreal.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{0D80058E-B1A5-4788-B0F1-7609918D5ACC}</UniqueIdentifier>
+			<UniqueIdentifier>{8B0EEF95-E3DC-4692-819D-C22FD972BB88}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +28,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\HonoursProjectUnreal">
-			<UniqueIdentifier>{08224488-BB59-4EF3-B37D-838C0EEA64BC}</UniqueIdentifier>
+			<UniqueIdentifier>{FA8185AD-6B65-48BB-9EE6-197C06B86800}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\HonoursProjectUnreal\HonoursProjectUnreal.Build.cs">
 			<Filter>Source\HonoursProjectUnreal</Filter>
@@ -43,6 +43,18 @@
 			<Filter>Source\HonoursProjectUnreal</Filter>
 		</ClCompile >
 		<ClInclude Include="..\..\Source\HonoursProjectUnreal\HonoursProjectUnrealGameMode.h">
+			<Filter>Source\HonoursProjectUnreal</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\HonoursProjectUnreal\IInput.cpp">
+			<Filter>Source\HonoursProjectUnreal</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\HonoursProjectUnreal\IInput.h">
+			<Filter>Source\HonoursProjectUnreal</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\HonoursProjectUnreal\IMovement.cpp">
+			<Filter>Source\HonoursProjectUnreal</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\HonoursProjectUnreal\IMovement.h">
 			<Filter>Source\HonoursProjectUnreal</Filter>
 		</ClInclude >
 		<ClCompile Include="..\..\Source\HonoursProjectUnreal\RTSPlayerCameraPawn.cpp">

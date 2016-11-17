@@ -9,10 +9,42 @@
 #include "HonoursProjectUnreal.generated.dep.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1HonoursProjectUnreal() {}
+FName HONOURSPROJECTUNREAL_ReactToHighNoon = FName(TEXT("ReactToHighNoon"));
 	void AHonoursProjectUnrealGameMode::StaticRegisterNativesAHonoursProjectUnrealGameMode()
 	{
 	}
 	IMPLEMENT_CLASS(AHonoursProjectUnrealGameMode, 2594969491);
+	void UIInput::StaticRegisterNativesUIInput()
+	{
+	}
+	IMPLEMENT_CLASS(UIInput, 3182694077);
+	bool IIMovement::ReactToHighNoon()
+	{
+		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_ReactToHighNoon instead.");
+		IMovement_eventReactToHighNoon_Parms Parms;
+		return Parms.ReturnValue;
+	}
+	void UIMovement::StaticRegisterNativesUIMovement()
+	{
+		FNativeFunctionRegistrar::RegisterFunction(UIMovement::StaticClass(), "ReactToHighNoon",(Native)&IIMovement::execReactToHighNoon);
+	}
+	IMPLEMENT_CLASS(UIMovement, 1056719889);
+	bool IIMovement::Execute_ReactToHighNoon(UObject* O)
+	{
+		check(O != NULL);
+		check(O->GetClass()->ImplementsInterface(UIMovement::StaticClass()));
+		IMovement_eventReactToHighNoon_Parms Parms;
+		UFunction* const Func = O->FindFunction(HONOURSPROJECTUNREAL_ReactToHighNoon);
+		if (Func)
+		{
+			O->ProcessEvent(Func, &Parms);
+		}
+		else if (auto I = (IIMovement*)(O->GetNativeInterfaceAddress(UIMovement::StaticClass())))
+		{
+			Parms.ReturnValue = I->ReactToHighNoon_Implementation();
+		}
+		return Parms.ReturnValue;
+	}
 	void ARTSPlayerCameraPawn::StaticRegisterNativesARTSPlayerCameraPawn()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerCameraPawn::StaticClass(), "FastMoveInput",(Native)&ARTSPlayerCameraPawn::execFastMoveInput);
@@ -76,6 +108,11 @@ void EmptyLinkFunctionForGeneratedCode1HonoursProjectUnreal() {}
 
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_AHonoursProjectUnrealGameMode_NoRegister();
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_AHonoursProjectUnrealGameMode();
+	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_UIInput_NoRegister();
+	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_UIInput();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_UIMovement_ReactToHighNoon();
+	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_UIMovement_NoRegister();
+	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_UIMovement();
 	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_FastMoveInput();
 	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_GetIsolatedCameraYaw();
 	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_MoveCameraForward();
@@ -158,6 +195,89 @@ void EmptyLinkFunctionForGeneratedCode1HonoursProjectUnreal() {}
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AHonoursProjectUnrealGameMode(Z_Construct_UClass_AHonoursProjectUnrealGameMode, &AHonoursProjectUnrealGameMode::StaticClass, TEXT("AHonoursProjectUnrealGameMode"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AHonoursProjectUnrealGameMode);
+	UClass* Z_Construct_UClass_UIInput_NoRegister()
+	{
+		return UIInput::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UIInput()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			UInterface::StaticClass();
+			Z_Construct_UPackage__Script_HonoursProjectUnreal();
+			OuterClass = UIInput::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20104081;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintType"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("IInput.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UIInput(Z_Construct_UClass_UIInput, &UIInput::StaticClass, TEXT("UIInput"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UIInput);
+	UFunction* Z_Construct_UFunction_UIMovement_ReactToHighNoon()
+	{
+		UObject* Outer=Z_Construct_UClass_UIMovement();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ReactToHighNoon"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(IMovement_eventReactToHighNoon_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, IMovement_eventReactToHighNoon_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, IMovement_eventReactToHighNoon_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, IMovement_eventReactToHighNoon_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("MyCategory"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("IMovement.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UIMovement_NoRegister()
+	{
+		return UIMovement::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UIMovement()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			UInterface::StaticClass();
+			Z_Construct_UPackage__Script_HonoursProjectUnreal();
+			OuterClass = UIMovement::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20104081;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UIMovement_ReactToHighNoon());
+
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UIMovement_ReactToHighNoon(), "ReactToHighNoon"); // 2883524297
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintType"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("IMovement.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UIMovement(Z_Construct_UClass_UIMovement, &UIMovement::StaticClass, TEXT("UIMovement"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UIMovement);
 	UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_FastMoveInput()
 	{
 		struct RTSPlayerCameraPawn_eventFastMoveInput_Parms
@@ -1264,8 +1384,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/HonoursProjectUnreal")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x77D5556A;
-			Guid.B = 0xC6415790;
+			Guid.A = 0xC6913C54;
+			Guid.B = 0x59969BC0;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

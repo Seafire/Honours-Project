@@ -419,6 +419,10 @@
 		<ClInclude Include="..\..\Source\HonoursProjectUnreal\HonoursProjectUnreal.h" />
 		<ClCompile Include="..\..\Source\HonoursProjectUnreal\HonoursProjectUnrealGameMode.cpp" />
 		<ClInclude Include="..\..\Source\HonoursProjectUnreal\HonoursProjectUnrealGameMode.h" />
+		<ClCompile Include="..\..\Source\HonoursProjectUnreal\IInput.cpp" />
+		<ClInclude Include="..\..\Source\HonoursProjectUnreal\IInput.h" />
+		<ClCompile Include="..\..\Source\HonoursProjectUnreal\IMovement.cpp" />
+		<ClInclude Include="..\..\Source\HonoursProjectUnreal\IMovement.h" />
 		<ClCompile Include="..\..\Source\HonoursProjectUnreal\RTSPlayerCameraPawn.cpp" />
 		<ClInclude Include="..\..\Source\HonoursProjectUnreal\RTSPlayerCameraPawn.h" />
 		<ClCompile Include="..\..\Source\HonoursProjectUnreal\RTSPlayerController.cpp" />

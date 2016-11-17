@@ -8,6 +8,12 @@
 #ifndef HONOURSPROJECTUNREAL_HonoursProjectUnrealGameMode_generated_h
 	#include "HonoursProjectUnrealGameMode.h"
 #endif
+#ifndef HONOURSPROJECTUNREAL_IInput_generated_h
+	#include "IInput.h"
+#endif
+#ifndef HONOURSPROJECTUNREAL_IMovement_generated_h
+	#include "IMovement.h"
+#endif
 #ifndef HONOURSPROJECTUNREAL_RTSPlayerCameraPawn_generated_h
 	#include "RTSPlayerCameraPawn.h"
 #endif
