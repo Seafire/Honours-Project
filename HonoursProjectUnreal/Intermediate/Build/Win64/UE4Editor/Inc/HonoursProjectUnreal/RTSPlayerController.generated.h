@@ -13,8 +13,44 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define HONOURSPROJECTUNREAL_RTSPlayerController_generated_h
 
-#define HonoursProjectUnreal_Source_HonoursProjectUnreal_RTSPlayerController_h_14_RPC_WRAPPERS
-#define HonoursProjectUnreal_Source_HonoursProjectUnreal_RTSPlayerController_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define HonoursProjectUnreal_Source_HonoursProjectUnreal_RTSPlayerController_h_14_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execMovePawn) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->MovePawn(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSelectInput) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->SelectInput(); \
+		P_NATIVE_END; \
+	}
+
+
+#define HonoursProjectUnreal_Source_HonoursProjectUnreal_RTSPlayerController_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execMovePawn) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->MovePawn(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSelectInput) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->SelectInput(); \
+		P_NATIVE_END; \
+	}
+
+
 #define HonoursProjectUnreal_Source_HonoursProjectUnreal_RTSPlayerController_h_14_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesARTSPlayerController(); \

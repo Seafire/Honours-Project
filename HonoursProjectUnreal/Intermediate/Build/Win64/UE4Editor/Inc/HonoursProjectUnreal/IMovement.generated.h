@@ -14,43 +14,43 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define HONOURSPROJECTUNREAL_IMovement_generated_h
 
 #define HonoursProjectUnreal_Source_HonoursProjectUnreal_IMovement_h_14_RPC_WRAPPERS \
-	virtual bool ReactToHighNoon_Implementation()=0; \
+	virtual bool MoveToMouseLocation_Implementation()=0; \
  \
-	DECLARE_FUNCTION(execReactToHighNoon) \
+	DECLARE_FUNCTION(execMoveToMouseLocation) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=this->ReactToHighNoon_Implementation(); \
+		*(bool*)Z_Param__Result=this->MoveToMouseLocation_Implementation(); \
 		P_NATIVE_END; \
 	}
 
 
 #define HonoursProjectUnreal_Source_HonoursProjectUnreal_IMovement_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual bool ReactToHighNoon_Implementation()=0; \
+	virtual bool MoveToMouseLocation_Implementation()=0; \
  \
-	DECLARE_FUNCTION(execReactToHighNoon) \
+	DECLARE_FUNCTION(execMoveToMouseLocation) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=this->ReactToHighNoon_Implementation(); \
+		*(bool*)Z_Param__Result=this->MoveToMouseLocation_Implementation(); \
 		P_NATIVE_END; \
 	}
 
 
 #define HonoursProjectUnreal_Source_HonoursProjectUnreal_IMovement_h_14_EVENT_PARMS \
-	struct IMovement_eventReactToHighNoon_Parms \
+	struct IMovement_eventMoveToMouseLocation_Parms \
 	{ \
 		bool ReturnValue; \
  \
 		/** Constructor, initializes return property only **/ \
-		IMovement_eventReactToHighNoon_Parms() \
+		IMovement_eventMoveToMouseLocation_Parms() \
 			: ReturnValue(false) \
 		{ \
 		} \
 	};
 
 
-extern HONOURSPROJECTUNREAL_API  FName HONOURSPROJECTUNREAL_ReactToHighNoon;
+extern HONOURSPROJECTUNREAL_API  FName HONOURSPROJECTUNREAL_MoveToMouseLocation;
 #define HonoursProjectUnreal_Source_HonoursProjectUnreal_IMovement_h_14_CALLBACK_WRAPPERS
 #define HonoursProjectUnreal_Source_HonoursProjectUnreal_IMovement_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
@@ -107,7 +107,7 @@ protected: \
 	virtual ~IIMovement() {} \
 public: \
 	typedef UIMovement UClassType; \
-	static bool Execute_ReactToHighNoon(UObject* O); \
+	static bool Execute_MoveToMouseLocation(UObject* O); \
 	virtual UObject* _getUObject() const = 0;
 
 
@@ -116,7 +116,7 @@ protected: \
 	virtual ~IIMovement() {} \
 public: \
 	typedef UIMovement UClassType; \
-	static bool Execute_ReactToHighNoon(UObject* O); \
+	static bool Execute_MoveToMouseLocation(UObject* O); \
 	virtual UObject* _getUObject() const = 0;
 
 

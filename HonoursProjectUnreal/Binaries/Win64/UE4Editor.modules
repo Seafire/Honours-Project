@@ -1,8 +1,8 @@
 {
 	"Changelist" : 3039270,
-	"BuildId" : "",
+	"BuildId" : "5a4a5b6a-50d2-4547-b1e0-58e0eddcc215",
 	"Modules" : 
 	{
-		"HonoursProjectUnreal" : "UE4Editor-HonoursProjectUnreal-68.dll"
+		"HonoursProjectUnreal" : "UE4Editor-HonoursProjectUnreal-2721.dll"
 	}
 }

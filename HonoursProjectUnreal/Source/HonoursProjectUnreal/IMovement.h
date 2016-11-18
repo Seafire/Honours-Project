@@ -21,6 +21,6 @@ class HONOURSPROJECTUNREAL_API IIMovement
 public:
 
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "MyCategory")
-		bool ReactToHighNoon();
+		bool MoveToMouseLocation();
 
 };

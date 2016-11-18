@@ -2,7 +2,7 @@
 	"TargetName" : "HonoursProjectUnrealEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "",
+	"BuildId" : "5a4a5b6a-50d2-4547-b1e0-58e0eddcc215",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -15,15 +15,15 @@
 	"BuildProducts" :
 	[
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-HonoursProjectUnreal.dll",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-HonoursProjectUnreal-2721.dll",
 			"Type" : "DynamicLibrary"
 		},
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-HonoursProjectUnreal.pdb",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-HonoursProjectUnreal-2721.pdb",
 			"Type" : "SymbolFile"
 		},
 		{
-			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-HonoursProjectUnreal.lib",
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-HonoursProjectUnreal-2721.lib",
 			"Type" : "ImportLibrary"
 		}
 	],

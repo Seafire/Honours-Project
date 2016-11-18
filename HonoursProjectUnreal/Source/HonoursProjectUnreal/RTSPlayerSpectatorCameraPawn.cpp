@@ -10,7 +10,7 @@ ARTSPlayerSpectatorCameraPawn::ARTSPlayerSpectatorCameraPawn(const FObjectInitia
 	PrimaryActorTick.bCanEverTick = true;
 
 	// disable standard WASD movement
-	//bAddDefaultMovementBindings = false;
+	bAddDefaultMovementBindings = false;
 
 	// not needed Pitch Yaw Roll
 	bUseControllerRotationPitch = false;

@@ -11,6 +11,26 @@ ARTSPlayerController::ARTSPlayerController()
 
 }
 
+void ARTSPlayerController::SetupInputComponent()
+{
+	Super::SetupInputComponent();
+
+	//Super::PlayerInput(InputComponent);
+
+
+	InputComponent->BindAction("SelectInput", IE_Pressed, this, &ARTSPlayerController::SelectInput);
+	InputComponent->BindAction("MovePawn", IE_Pressed, this, &ARTSPlayerController::MovePawn);
+}
+
+void ARTSPlayerController::SelectInput()
+{
+	return;
+}
+
+void ARTSPlayerController::MovePawn()
+{
+	return;
+}
 
 
 

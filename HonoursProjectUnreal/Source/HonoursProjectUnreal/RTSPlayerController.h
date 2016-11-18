@@ -14,6 +14,18 @@ class HONOURSPROJECTUNREAL_API ARTSPlayerController : public APlayerController
 	GENERATED_BODY()
 
 		ARTSPlayerController();
+
+private:
+	/* Set up the player movement */
+	void SetupInputComponent();
+
+public:
+
+	UFUNCTION()
+		void SelectInput();
+
+	UFUNCTION()
+		void MovePawn();
 	
 	
 };

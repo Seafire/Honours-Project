@@ -9,7 +9,7 @@
 #include "HonoursProjectUnreal.generated.dep.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1HonoursProjectUnreal() {}
-FName HONOURSPROJECTUNREAL_ReactToHighNoon = FName(TEXT("ReactToHighNoon"));
+FName HONOURSPROJECTUNREAL_MoveToMouseLocation = FName(TEXT("MoveToMouseLocation"));
 	void AHonoursProjectUnrealGameMode::StaticRegisterNativesAHonoursProjectUnrealGameMode()
 	{
 	}
@@ -18,30 +18,30 @@ FName HONOURSPROJECTUNREAL_ReactToHighNoon = FName(TEXT("ReactToHighNoon"));
 	{
 	}
 	IMPLEMENT_CLASS(UIInput, 3182694077);
-	bool IIMovement::ReactToHighNoon()
+	bool IIMovement::MoveToMouseLocation()
 	{
-		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_ReactToHighNoon instead.");
-		IMovement_eventReactToHighNoon_Parms Parms;
+		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_MoveToMouseLocation instead.");
+		IMovement_eventMoveToMouseLocation_Parms Parms;
 		return Parms.ReturnValue;
 	}
 	void UIMovement::StaticRegisterNativesUIMovement()
 	{
-		FNativeFunctionRegistrar::RegisterFunction(UIMovement::StaticClass(), "ReactToHighNoon",(Native)&IIMovement::execReactToHighNoon);
+		FNativeFunctionRegistrar::RegisterFunction(UIMovement::StaticClass(), "MoveToMouseLocation",(Native)&IIMovement::execMoveToMouseLocation);
 	}
-	IMPLEMENT_CLASS(UIMovement, 1056719889);
-	bool IIMovement::Execute_ReactToHighNoon(UObject* O)
+	IMPLEMENT_CLASS(UIMovement, 3350979325);
+	bool IIMovement::Execute_MoveToMouseLocation(UObject* O)
 	{
 		check(O != NULL);
 		check(O->GetClass()->ImplementsInterface(UIMovement::StaticClass()));
-		IMovement_eventReactToHighNoon_Parms Parms;
-		UFunction* const Func = O->FindFunction(HONOURSPROJECTUNREAL_ReactToHighNoon);
+		IMovement_eventMoveToMouseLocation_Parms Parms;
+		UFunction* const Func = O->FindFunction(HONOURSPROJECTUNREAL_MoveToMouseLocation);
 		if (Func)
 		{
 			O->ProcessEvent(Func, &Parms);
 		}
 		else if (auto I = (IIMovement*)(O->GetNativeInterfaceAddress(UIMovement::StaticClass())))
 		{
-			Parms.ReturnValue = I->ReactToHighNoon_Implementation();
+			Parms.ReturnValue = I->MoveToMouseLocation_Implementation();
 		}
 		return Parms.ReturnValue;
 	}
@@ -71,8 +71,10 @@ FName HONOURSPROJECTUNREAL_ReactToHighNoon = FName(TEXT("ReactToHighNoon"));
 	IMPLEMENT_CLASS(ARTSPlayerCameraPawn, 2855591568);
 	void ARTSPlayerController::StaticRegisterNativesARTSPlayerController()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerController::StaticClass(), "MovePawn",(Native)&ARTSPlayerController::execMovePawn);
+		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerController::StaticClass(), "SelectInput",(Native)&ARTSPlayerController::execSelectInput);
 	}
-	IMPLEMENT_CLASS(ARTSPlayerController, 2481376308);
+	IMPLEMENT_CLASS(ARTSPlayerController, 75692255);
 	void ARTSPlayerSpectatorCameraPawn::StaticRegisterNativesARTSPlayerSpectatorCameraPawn()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ARTSPlayerSpectatorCameraPawn::StaticClass(), "FastMoveInput",(Native)&ARTSPlayerSpectatorCameraPawn::execFastMoveInput);
@@ -110,7 +112,7 @@ FName HONOURSPROJECTUNREAL_ReactToHighNoon = FName(TEXT("ReactToHighNoon"));
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_AHonoursProjectUnrealGameMode();
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_UIInput_NoRegister();
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_UIInput();
-	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_UIMovement_ReactToHighNoon();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_UIMovement_MoveToMouseLocation();
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_UIMovement_NoRegister();
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_UIMovement();
 	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_FastMoveInput();
@@ -135,6 +137,8 @@ FName HONOURSPROJECTUNREAL_ReactToHighNoon = FName(TEXT("ReactToHighNoon"));
 	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerCameraPawn_ZoomOutByWheel();
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_ARTSPlayerCameraPawn_NoRegister();
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_ARTSPlayerCameraPawn();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerController_MovePawn();
+	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerController_SelectInput();
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_ARTSPlayerController_NoRegister();
 	HONOURSPROJECTUNREAL_API class UClass* Z_Construct_UClass_ARTSPlayerController();
 	HONOURSPROJECTUNREAL_API class UFunction* Z_Construct_UFunction_ARTSPlayerSpectatorCameraPawn_FastMoveInput();
@@ -226,15 +230,15 @@ FName HONOURSPROJECTUNREAL_ReactToHighNoon = FName(TEXT("ReactToHighNoon"));
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UIInput(Z_Construct_UClass_UIInput, &UIInput::StaticClass, TEXT("UIInput"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UIInput);
-	UFunction* Z_Construct_UFunction_UIMovement_ReactToHighNoon()
+	UFunction* Z_Construct_UFunction_UIMovement_MoveToMouseLocation()
 	{
 		UObject* Outer=Z_Construct_UClass_UIMovement();
 		static UFunction* ReturnFunction = NULL;
 		if (!ReturnFunction)
 		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ReactToHighNoon"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(IMovement_eventReactToHighNoon_Parms));
-			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, IMovement_eventReactToHighNoon_Parms, bool);
-			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, IMovement_eventReactToHighNoon_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, IMovement_eventReactToHighNoon_Parms), sizeof(bool), true);
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MoveToMouseLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(IMovement_eventMoveToMouseLocation_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, IMovement_eventMoveToMouseLocation_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, IMovement_eventMoveToMouseLocation_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, IMovement_eventMoveToMouseLocation_Parms), sizeof(bool), true);
 			ReturnFunction->Bind();
 			ReturnFunction->StaticLink();
 #if WITH_METADATA
@@ -262,9 +266,9 @@ FName HONOURSPROJECTUNREAL_ReactToHighNoon = FName(TEXT("ReactToHighNoon"));
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20104081;
 
-				OuterClass->LinkChild(Z_Construct_UFunction_UIMovement_ReactToHighNoon());
+				OuterClass->LinkChild(Z_Construct_UFunction_UIMovement_MoveToMouseLocation());
 
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UIMovement_ReactToHighNoon(), "ReactToHighNoon"); // 2883524297
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UIMovement_MoveToMouseLocation(), "MoveToMouseLocation"); // 1447405735
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -810,6 +814,38 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ARTSPlayerCameraPawn(Z_Construct_UClass_ARTSPlayerCameraPawn, &ARTSPlayerCameraPawn::StaticClass, TEXT("ARTSPlayerCameraPawn"), false, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ARTSPlayerCameraPawn);
+	UFunction* Z_Construct_UFunction_ARTSPlayerController_MovePawn()
+	{
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerController();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MovePawn"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerController.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ARTSPlayerController_SelectInput()
+	{
+		UObject* Outer=Z_Construct_UClass_ARTSPlayerController();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SelectInput"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("RTSPlayerController.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ARTSPlayerController_NoRegister()
 	{
 		return ARTSPlayerController::StaticClass();
@@ -827,7 +863,11 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900284;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerController_MovePawn());
+				OuterClass->LinkChild(Z_Construct_UFunction_ARTSPlayerController_SelectInput());
 
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerController_MovePawn(), "MovePawn"); // 1125022676
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ARTSPlayerController_SelectInput(), "SelectInput"); // 1009271066
 				OuterClass->ClassConfigName = FName(TEXT("Game"));
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -1384,8 +1424,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/HonoursProjectUnreal")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xC6913C54;
-			Guid.B = 0x59969BC0;
+			Guid.A = 0x65AAC81F;
+			Guid.B = 0xD952EAB7;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
